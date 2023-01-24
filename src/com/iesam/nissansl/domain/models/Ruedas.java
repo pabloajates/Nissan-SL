@@ -1,20 +1,12 @@
 package com.iesam.nissansl.domain.models;
 
-public class ruedas {
+public class Ruedas implements Accesorios {
 
     private Integer codRueda;
     private String marca;
     private String modelo;
 
     private String diametro;
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public Integer getCodRueda() {
-        return codRueda;
-    }
 
     public void setCodRueda(Integer codRueda) {
         this.codRueda = codRueda;
@@ -42,4 +34,13 @@ public class ruedas {
     }
 
 
+    @Override
+    public String getCod() {
+        return null;
+    }
+
+    @Override
+    public String getModelo() {
+        return null;
+    }
 }

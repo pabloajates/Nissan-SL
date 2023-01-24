@@ -1,13 +1,10 @@
 package com.iesam.nissansl.domain.models;
 
-public class cuadroMando {
+public class CuadroMando implements Accesorios {
 
     private Integer codCuadro;
     private String modelo;
 
-    public String getModelo() {
-        return modelo;
-    }
 
     public Integer getCodCuadro() {
         return codCuadro;
@@ -23,4 +20,13 @@ public class cuadroMando {
     }
 
 
+    @Override
+    public String getCod() {
+        return null;
+    }
+
+    @Override
+    public String getModelo() {
+        return null;
+    }
 }

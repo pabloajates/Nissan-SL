@@ -1,15 +1,22 @@
 package com.iesam.nissansl.domain.models;
 
-public class motor {
+public class Motor implements Accesorios {
 
     private Integer codMotor;
     private String modelo;
     private String cilindrada;
     private String caballos;
 
-    public String getModelo() {
-        return modelo;
+    @Override
+    public String getCod() {
+        return null;
     }
+
+    @Override
+    public String getModelo() {
+        return null;
+    }
+
 
     public Integer getCodMotor() {
         return codMotor;

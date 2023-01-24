@@ -1,6 +1,6 @@
 package com.iesam.nissansl.domain.models;
 
-public class chasis {
+public class Chasis {
 
     private Integer codBastidor;
     private String modelo;
