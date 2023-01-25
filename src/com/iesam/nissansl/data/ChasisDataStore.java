@@ -19,7 +19,7 @@ public class ChasisDataStore {
         dataStore.remove(CodBastidor);
     }
 
-    public Chasis buscar(String CodBastidor) {
+    public Chasis buscar(Integer CodBastidor) {
         return dataStore.get(CodBastidor);
     }
 
