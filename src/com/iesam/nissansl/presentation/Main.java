@@ -6,6 +6,7 @@ import com.iesam.nissansl.domain.models.Motor;
 import com.iesam.nissansl.domain.models.Ruedas;
 import com.iesam.nissansl.domain.usecases.GuardarAccesorioUseCase;
 import com.iesam.nissansl.domain.usecases.GuardarChasisUseCase;
+import com.iesam.nissansl.domain.usecases.ObtenerChasisUseCase;
 
 public class Main {
     public static void main(String[] args) {
@@ -72,9 +73,7 @@ public class Main {
         chasisAAAA.setCodBastidor(1000);
         chasisAAAA.setMarca("Mercedes");
         chasisAAAA.setModelo("M500");
-        chasisAAAA.setAccesorios(motorB);
-        chasisAAAA.setAccesorios(ruedasA);
-        chasisAAAA.setAccesorios(cuadroMandoA);
+
 
         GuardarChasisUseCase guardarChasisUseCase = new GuardarChasisUseCase();
         guardarChasisUseCase.execute(chasisAAAA);
@@ -84,9 +83,7 @@ public class Main {
         chasisBBBB.setCodBastidor(1001);
         chasisBBBB.setMarca("Renault");
         chasisBBBB.setModelo("TG12");
-        chasisBBBB.setAccesorios(motorB);
-        chasisBBBB.setAccesorios(ruedasB);
-        chasisBBBB.setAccesorios(cuadroMandoB);
+
 
         guardarChasisUseCase.execute(chasisBBBB);
 
@@ -95,9 +92,7 @@ public class Main {
         chasisCCCC.setCodBastidor(1002);
         chasisCCCC.setMarca("Audi");
         chasisCCCC.setModelo("FK800");
-        chasisCCCC.setAccesorios(motorA);
-        chasisCCCC.setAccesorios(ruedasA);
-        chasisCCCC.setAccesorios(cuadroMandoA);
+
 
         guardarChasisUseCase.execute(chasisCCCC);
 
@@ -106,11 +101,11 @@ public class Main {
         chasisDDDD.setCodBastidor(1003);
         chasisDDDD.setMarca("Golf");
         chasisDDDD.setModelo("30M");
-        chasisDDDD.setAccesorios(motorA);
-        chasisDDDD.setAccesorios(ruedasA);
-        chasisDDDD.setAccesorios(cuadroMandoB);
+
 
         guardarChasisUseCase.execute(chasisDDDD);
+
+        ObtenerChasisUseCase obtenerChasisUseCase = new ObtenerChasisUseCase();
 
 
         ImprimirChasis imprimirChasis = new ImprimirChasis();
@@ -119,8 +114,6 @@ public class Main {
         imprimirChasis.imprimir(chasisCCCC, ruedasA, motorA, cuadroMandoA  );
         imprimirChasis.imprimir(chasisDDDD, ruedasA, motorA, cuadroMandoB  );
 
-        MainSingleton mainSingleton = new MainSingleton();
-        mainSingleton.main();
 
     }
 }

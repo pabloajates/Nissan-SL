@@ -14,16 +14,17 @@ public class AccesoriosDataStore {
         dataStore.put(accesorios.getCod(), accesorios);
     }
 
-    public void eliminar(Integer getCod) {
-        dataStore.remove(getCod);
+    public Accesorios eliminar(Integer getCod) {
+       return dataStore.remove(getCod);
+
     }
 
     public Accesorios buscar(Integer getCod) {
         return dataStore.get(getCod);
     }
 
-    public void modificar(Accesorios accesorios) {
-        dataStore.put(accesorios.getCod(), accesorios);
+    public Accesorios modificar(Accesorios accesorios) {
+        return accesorios;
     }
 
     public static AccesoriosDataStore getAccesoriosDataStore() {
