@@ -88,5 +88,14 @@ public class Main {
         chasisDDDD.setAccesorios(ruedasA);
         chasisDDDD.setAccesorios(cuadroMandoB);
 
+        ImprimirChasis imprimirChasis = new ImprimirChasis();
+        imprimirChasis.imprimir(chasisAAAA );
+        imprimirChasis.imprimir(chasisBBBB );
+        imprimirChasis.imprimir(chasisCCCC );
+        imprimirChasis.imprimir(chasisDDDD );
+
+        MainSingleton mainSingleton = new MainSingleton();
+        mainSingleton.main();
+
     }
 }

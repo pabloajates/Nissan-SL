@@ -1,6 +1,7 @@
 package com.iesam.nissansl.presentation;
 
 import com.iesam.nissansl.domain.models.Chasis;
+import com.iesam.nissansl.domain.models.Ruedas;
 
 public class ImprimirChasis {
 
@@ -10,5 +11,8 @@ public class ImprimirChasis {
         System.out.println("Ruedas: " +chasis.getAccesorios().getCod());
         System.out.println("Motor: " +chasis.getAccesorios().getCod());
         System.out.println("CuadroMando: " +chasis.getAccesorios().getCod());
+        System.out.println("--------------------------------------------------------------------------------------------------------------- \n");
     }
+
+
 }
