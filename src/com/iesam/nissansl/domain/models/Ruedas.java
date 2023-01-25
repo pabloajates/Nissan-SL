@@ -5,8 +5,9 @@ public class Ruedas implements Accesorios {
     private Integer codRueda;
     private String marca;
     private String modelo;
-
     private String diametro;
+
+    private String unidades;
 
     public void setCodRueda(Integer codRueda) {
         this.codRueda = codRueda;
@@ -33,14 +34,22 @@ public class Ruedas implements Accesorios {
         this.diametro = diametro;
     }
 
+    public void setUnidades(String unidades) {
+        this.unidades = unidades;
+    }
 
     @Override
-    public String getCod() {
-        return null;
+    public Integer getCod() {
+        return codRueda;
     }
 
     @Override
     public String getModelo() {
-        return null;
+        return modelo;
+    }
+
+    @Override
+    public String getUnidades() {
+        return unidades;
     }
 }

@@ -2,6 +2,7 @@ package com.iesam.nissansl.domain.models;
 
 public interface Accesorios {
 
-    public String getCod();
+    public Integer getCod();
     public String getModelo();
+    public String getUnidades();
 }

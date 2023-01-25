@@ -7,6 +7,16 @@ public class Chasis {
 
     private String marca;
 
+    private Accesorios accesorios;
+
+    public Accesorios getAccesorios() {
+        return accesorios;
+    }
+
+    public void setAccesorios(Accesorios accesorios) {
+        this.accesorios = accesorios;
+    }
+
     public Integer getCodBastidor() {
         return codBastidor;
     }

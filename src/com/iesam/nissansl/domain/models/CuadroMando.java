@@ -5,10 +5,8 @@ public class CuadroMando implements Accesorios {
     private Integer codCuadro;
     private String modelo;
 
+    private String unidades;
 
-    public Integer getCodCuadro() {
-        return codCuadro;
-    }
 
     public void setCodCuadro(Integer codCuadro) {
         this.codCuadro = codCuadro;
@@ -19,14 +17,24 @@ public class CuadroMando implements Accesorios {
         this.modelo = modelo;
     }
 
+    public void setUnidades(String unidades) {
+        this.unidades = unidades;
+    }
 
     @Override
-    public String getCod() {
-        return null;
+    public Integer getCod() {
+        return codCuadro;
     }
 
     @Override
     public String getModelo() {
-        return null;
+        return modelo;
     }
+
+    @Override
+    public String getUnidades() {
+        return unidades;
+    }
+
+
 }

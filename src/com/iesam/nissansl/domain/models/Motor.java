@@ -7,14 +7,22 @@ public class Motor implements Accesorios {
     private String cilindrada;
     private String caballos;
 
+    private String unidades;
+
+
     @Override
-    public String getCod() {
-        return null;
+    public Integer getCod() {
+        return codMotor;
     }
 
     @Override
     public String getModelo() {
-        return null;
+        return modelo;
+    }
+
+    @Override
+    public String getUnidades() {
+        return unidades;
     }
 
 
@@ -46,5 +54,7 @@ public class Motor implements Accesorios {
     public void setCaballos(String caballos) {
         this.caballos = caballos;
     }
+
+    public void setUnidades(String unidades) { this.unidades = unidades;}
 
 }
