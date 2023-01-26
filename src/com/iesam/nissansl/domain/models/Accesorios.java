@@ -4,5 +4,5 @@ public interface Accesorios {
 
     public Integer getCod();
     public String getModelo();
-    public String getUnidades();
+    public Integer getUnidades();
 }

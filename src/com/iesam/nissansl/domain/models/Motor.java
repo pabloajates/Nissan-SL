@@ -7,7 +7,7 @@ public class Motor implements Accesorios {
     private String cilindrada;
     private String caballos;
 
-    private String unidades;
+    private Integer unidadesMotor;
 
 
     @Override
@@ -21,8 +21,8 @@ public class Motor implements Accesorios {
     }
 
     @Override
-    public String getUnidades() {
-        return unidades;
+    public Integer getUnidades() {
+        return unidadesMotor;
     }
 
 
@@ -55,6 +55,6 @@ public class Motor implements Accesorios {
         this.caballos = caballos;
     }
 
-    public void setUnidades(String unidades) { this.unidades = unidades;}
+    public void setUnidadesMotor(Integer unidadesMotor) { this.unidadesMotor = unidadesMotor;}
 
 }
